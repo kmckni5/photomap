@@ -44,9 +44,9 @@ function createPhotoMap () {
           .bindTooltip(place.name, {permanent: true}) // show labels by default
           .addTo(markersLayer);
         marker.properties = {
-          name: AC Hotel by Marriott Phoenix Tempe/Downtown,
-          description: The AC Marriot Hotel in Tempe, Arizona is a 4-star hotel located near Arizona State University and S Mill St. This hotel is full of amenties including a rooftop pool and a in house full service bar. Outside the hotel guests have access to electric scooters and bikes for tourist to have a fun active way to see the city,
-          pic_url: https://lsu-its.maps.arcgis.com/sharing/rest/content/items/c16abbd5eaa646c9ab4ad2af365dd7fe/data
+          name: place.name,
+          description: place.description,
+          pic_url: place.pic_url
         };
         
       } // end of for (row in csv.data) {...
