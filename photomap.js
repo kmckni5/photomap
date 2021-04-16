@@ -21,7 +21,7 @@ function createPhotoMap () {
   
   // create basemap object. See examples at https://leaflet-extras.github.io/leaflet-providers/preview/
   var basemap = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-  	maxZoom: 19,
+  	maxZoom: 16,
   	attribution: '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
   
