@@ -43,7 +43,7 @@ function createPhotoMap () {
         marker = L.marker([place.lat, place.long])
           .bindTooltip(place.name, {permanent: true}) // show labels by default
           .addTo(markersLayer);
-        marker.properties = {
+       marker.properties = {
           name: place.name,
           description: place.description,
           pic_url: place.pic_url
